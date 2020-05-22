@@ -2,17 +2,18 @@
 This is a django tool for build easily and fast web apps for Django
 
 # Dependencies - Prepare the snacks 
--Django 3.0.5
--django-crispy-forms
+    -Django 3.0.5
+    -django-crispy-forms
 
 # My first food
 inside the folder, run the next command
-$ py .\src\ 'json_path' './json_Examples/admin_products.json' './out/'
+    $ py .\src\ 'json_path' './json_Examples/admin_products.json' './out/'
 
-move to './out/admin_products/'
+move to 
+    './out/admin_products/'
 
 setup your database
-'./out/admin_products/admin_products/settings.py'
+    './out/admin_products/admin_products/settings.py'
 
     DATABASES = {
         'default': {
@@ -30,13 +31,13 @@ it was tested with PostgreSQL
 
 
 Make migrations and migrate
-$ py manage.py makemigrations
-$ py manage.py migrate
+    $ py manage.py makemigrations
+    $ py manage.py migrate
 
 Run server
-$ py manage.py runserver
+    $ py manage.py runserver
 
-then go to http://localhost:8000/app
+    then go to http://localhost:8000/app
 
 On json_examples you will have some json examples, feel free to try or play with them 
 
