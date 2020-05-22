@@ -1,0 +1,40 @@
+{
+    "name": "Persons_pets",
+    "description": ":v",
+    "databaseType": "Sqlite",
+    "tables": [
+        {
+            "name": "Persona",
+            "fields": [
+                {
+                    "name": "Nombre",
+                    "type": "String",
+                    "required": "True",
+                    "unique":"True"
+                },
+                {
+                    "name": "Edad",
+                    "type": "Integer",
+                    "required": "True",
+                    "unique":"False"
+                    
+                }
+            ]
+        },
+        {
+            "name": "Mascota",
+            "fields": [
+                {
+                    "name": "Nombre",
+                    "type": "String",
+                    "required": "True"
+                },
+                {
+                    "name": "Propietario",
+                    "type": "Persona",
+                    "required": "False"
+                }
+            ]
+        }
+    ]
+}
