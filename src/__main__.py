@@ -128,7 +128,7 @@ if __name__ == "__main__":
     #argv[2] JSON path | string
     #argv[3] out_path
     
-    if len(argv) >= 3:
+    if len(argv) == 4:
         JSON_type = argv[1]
         input_json = argv[2] 
         out_path = argv[3]
