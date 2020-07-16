@@ -6,7 +6,10 @@ This is a django tool for build easily and fast web apps for Django
 # Dependencies - Prepare the snacks 
     -Django 3.0.5
     -django-crispy-forms
+    -django-dev-settings==2019.8.4
 
+    $pip install -r req.txt
+    
 # My first food
 inside the folder, run the next command
     $ py .\src\ 'json_path' './json_Examples/admin_products.json' './out/'
