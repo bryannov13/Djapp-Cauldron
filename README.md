@@ -1,4 +1,6 @@
 # Djapp-Cauldron
+Simple Django app builder from a json file
+This tool helps to build a demo functional app with the CRUD basics
 This is a django tool for build easily and fast web apps for Django
 
 # Dependencies - Prepare the snacks 
@@ -45,4 +47,4 @@ On this version is not considered multiple apps, we are working on that
 
 This is a collaboration with sitecauldron.com
 
-Any idea is welcome
+Any feature idea to make it better is welcome!!
