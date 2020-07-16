@@ -44,4 +44,11 @@ On this version is not considered multiple apps, we are working on that
 
 This is a collaboration with sitecauldron.com
 
+
+################################
+        Some arguments are required:
+                argv[1] "json_path"|"json_string"
+                argv[2] JSON path "./<yourJSONfile>.json" | string Your Json as string 
+                argv[3] out_path "<yourOutput Path>"
+################################
 Any idea is welcome

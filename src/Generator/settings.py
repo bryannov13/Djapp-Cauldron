@@ -94,7 +94,7 @@ class settings_generator():
         ]
         
         
-        if self.app['databaseType'] == 'PostgreSQL':
+        if self.app['databaseType'] == 'PostgreSql':
             a.extend([
                 "# Database\n",
                 "# https://docs.djangoproject.com/en/3.0/ref/settings/#databases\n",

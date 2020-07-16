@@ -1,6 +1,7 @@
 
 #Output files
 .out/
-
+.input/
+log.txt
 #Example files
 #./json_examples

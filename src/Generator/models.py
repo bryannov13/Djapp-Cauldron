@@ -26,6 +26,8 @@ class model_generator():
                 t = "models.IntegerField()"
             elif type_ == 'Floating':
                 t = "models.FloatField()"
+            elif type_ == 'Boolean':
+                t = "models.BooleanField()"
             elif type_ == 'DateTime':
                 t = "models.DateField()"
                 pass
