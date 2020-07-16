@@ -1,19 +1,19 @@
 {
     "name": "Persons_pets",
     "description": ":v",
-    "databaseType": "Sqlite",
+    "databaseType": "PostgreSql",
     "tables": [
         {
-            "name": "Persona",
+            "name": "Person",
             "fields": [
                 {
-                    "name": "Nombre",
+                    "name": "Name",
                     "type": "String",
                     "required": "True",
                     "unique":"True"
                 },
                 {
-                    "name": "Edad",
+                    "name": "Age",
                     "type": "Integer",
                     "required": "True",
                     "unique":"False"
@@ -22,16 +22,16 @@
             ]
         },
         {
-            "name": "Mascota",
+            "name": "Pets",
             "fields": [
                 {
-                    "name": "Nombre",
+                    "name": "Name",
                     "type": "String",
                     "required": "True"
                 },
                 {
-                    "name": "Propietario",
-                    "type": "Persona",
+                    "name": "Owner",
+                    "type": "Person",
                     "required": "False"
                 }
             ]
