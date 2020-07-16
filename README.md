@@ -9,7 +9,7 @@ This is a django tool for build easily and fast web apps for Django
     -django-dev-settings==2019.8.4
 
     $pip install -r req.txt
-    
+
 # My first food
 inside the folder, run the next command
     $ py .\src\ 'json_path' './json_Examples/admin_products.json' './out/'
@@ -44,19 +44,19 @@ Run server
 
     then go to http://localhost:8000/app
 
-#Input example
+# Input example
 
     {
         "name": "admin_products",
         "description": ":v",
-        "databaseType": "Postgresql",
+        "databaseType": "PostgreSql",
         "tables": 
             [
                 {
-                    "name": "Categoria_producto",
+                    "name": "Producto_category",
                     "fields": [
                         {
-                            "name": "Nombre",
+                            "name": "Title",
                             "type": "String",
                             "required": "True",
                             "unique":"True"
@@ -64,16 +64,16 @@ Run server
                     ]
                 },
                 {
-                    "name": "Producto",
+                    "name": "Product",
                     "fields": [
                         {
-                            "name": "Nombre",
+                            "name": "Title",
                             "type": "String",
                             "required": "True"
                         },
                         {
-                            "name": "Categoria",
-                            "type": "Categoria_producto",
+                            "name": "Category",
+                            "type": "Producto_category",
                             "required": "True"
                         },
                         {
@@ -90,14 +90,14 @@ On json_examples you will have some json examples, feel free to try or play with
 
 On this version is not considered multiple apps, we are working on that
 
-This is a collaboration with sitecauldron.com
+This is a collaboration with [Site Cauldron](http://sitecauldron.com)
 
-
-################################
+# Arguments
+    ################################
         Some arguments are required:
                 argv[1] "json_path"|"json_string"
                 argv[2] JSON path "./<yourJSONfile>.json" | string Your Json as string 
                 argv[3] out_path "<yourOutput Path>"
-################################
-Any idea is welcome
+    ################################
+
 Any feature idea to make it better is welcome!!
