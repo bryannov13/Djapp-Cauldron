@@ -41,6 +41,48 @@ Run server
 
     then go to http://localhost:8000/app
 
+#Input example
+
+{
+    "name": "admin_products",
+    "description": ":v",
+    "databaseType": "Postgresql",
+    "tables": 
+        [
+            {
+                "name": "Categoria_producto",
+                "fields": [
+                    {
+                        "name": "Nombre",
+                        "type": "String",
+                        "required": "True",
+                        "unique":"True"
+                    }
+                ]
+            },
+            {
+                "name": "Producto",
+                "fields": [
+                    {
+                        "name": "Nombre",
+                        "type": "String",
+                        "required": "True"
+                    },
+                    {
+                        "name": "Categoria",
+                        "type": "Categoria_producto",
+                        "required": "True"
+                    },
+                    {
+                        "name": "Stock",
+                        "type": "Integer",
+                        "required": "True"
+                    }
+                ]
+            }
+        ]
+}
+
 On json_examples you will have some json examples, feel free to try or play with them 
 
 On this version is not considered multiple apps, we are working on that
