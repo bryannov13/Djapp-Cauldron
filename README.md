@@ -86,6 +86,23 @@ Run server
             ]
     }
 
+# Type of Data
+
+        if type_ == 'String':
+            t = "models.CharField(max_length=50)"
+        elif type_ == 'Integer':
+            t = "models.IntegerField()"
+        elif type_ == 'Floating':
+            t = "models.FloatField()"
+        elif type_ == 'Boolean':
+            t = "models.BooleanField()"
+        elif type_ == 'DateTime':
+            t = "models.DateField()"
+            pass
+        else:
+            t = "models.ForeignKey("+str(type_)+", on_delete=models.CASCADE)"
+        
+
 On json_examples you will have some json examples, feel free to try or play with them 
 
 On this version is not considered multiple apps, we are working on that
